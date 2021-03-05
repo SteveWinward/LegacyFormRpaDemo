@@ -1,0 +1,43 @@
+﻿@model LegacyFormRpaDemo.Models.SubmittedForm
+
+@{
+    ViewBag.Title = "Submitted";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Submitted</h2>
+
+<p>
+    Your form was succesfully submitted.  Your submission record is: <span>@Model.SubmissionId</span>
+</p>
+
+<p>
+    @Html.LabelFor(model => model.FormDetails.EventName): @Html.DisplayTextFor(model => model.FormDetails.EventName)
+</p>
+
+<p>
+    @Html.LabelFor(model => model.FormDetails.EventDate): @Html.DisplayTextFor(model => model.FormDetails.EventDate)
+</p>
+
+<p>
+    @Html.LabelFor(model => model.FormDetails.EventTime): @Html.DisplayTextFor(model => model.FormDetails.EventTime)
+</p>
+
+<p>
+    @Html.LabelFor(model => model.FormDetails.Location): @Html.DisplayTextFor(model => model.FormDetails.Location)
+</p>
+<p>
+    @Html.LabelFor(model => model.FormDetails.TypeOfFood): @Html.DisplayTextFor(model => model.FormDetails.TypeOfFood)
+</p>
+<p>
+    @Html.LabelFor(model => model.FormDetails.VolunteerName): @Html.DisplayTextFor(model => model.FormDetails.VolunteerName)
+</p>
+<p>
+    @Html.LabelFor(model => model.FormDetails.Phone): @Html.DisplayTextFor(model => model.FormDetails.Phone)
+</p>
+<p>
+    @Html.LabelFor(model => model.FormDetails.PhoneAlt): @Html.DisplayTextFor(model => model.FormDetails.PhoneAlt)
+</p>
+<p>
+    @Html.LabelFor(model => model.FormDetails.Email): @Html.DisplayTextFor(model => model.FormDetails.Email)
+</p>
